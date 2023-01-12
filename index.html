@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dollar_sign_in_circle.svg/2048px-Dollar_sign_in_circle.svg.png">
+</head>
+    <title>Karnataka</title>
+
+    <script>
+        var placeDetails = {
+            "bangalore": "<b><h2>Bendakaluru</h2><h3><i>Silicon Valley of India &<br> The City of IT Hub </i><br></h3><p>Places to visit::<br> <ul><li>Lalbagh Botanical Garden</li><li>Bengaluru Palace</li><li>Radha Krishna Temple ISKCON</li><li>Vidhana Soudha</li><li>Bannerghatta National Park</li><li>UVCE</li><li>Government Museum</li><li>Wonderla Amusement Park</li><li>Food Street</li><li>Nandi Hills</li><li>Many more....</li></b>",
+            "uttarakannada": "<b><h2>Uttara Kannada</h2><h5><h3><i>The Untouched Heaven&<br> 5th Largest District of Karnataka State <br></h5><p>Places to visit::<br> <ul><li>Honnavara--(My Home town) <ul><li>Sri Idagunji Mahaganapati Temple</li><li>Sharavati Back Waters</li><li>Eco Beach</li><li>Kandla Walk</li><li>Shri Karikaan Parameshwari Temple</li><li>Gersoppa</li></ul></li><li>Jog Falls</li><li>Dudhsagar</li><li>Yana</li><li>Murdeshwar</li><li>Gokarna</li><li>Karwar</li><li>Sirsi</li><li>Mirjan Fort</li><li>Unchalli Falls</li><li>Many more....</li></b>",
+            "udupi": "<b><h2><i>Udupi</h2><h3>Udupi is popular for its food, temples, beaches<br></h5><p>Places to visit::<br> <ul><li>Sri Krishna Temple</li><li>Kapu Beach </li><li>Anegudde Vinayak Temple</li><li>Maravanthe Beach</li><li> Malpe Beach </li><li>St Mary's Island</li><li>Many more....</i></li>",
+            "ballari": "<b><h2>Ballari</h2><h3> <i>Biggest district in Karnataka<br> Steel City</h3><p>Places to visit::<br> <ul><li>Hampi</li><li>Bellari Fort </li><li> Kaladham</li><li> Sri Guru Koteshwar</li><li> Malpe Beach </li><li>St Mary's Island</li><li>Many more....</li></b></i>",    
+            "mysuru": "<b><h2>Mysuru</h2><h3><i> Mysuru is famous in the world for its sandalwood and rosewood artifacts</h3><p>Places to visit::<br> <ul><li>Mysuru Palace</li><li>Sri Chamundeshwari Temple</li><li> Sri Chamarajendra Zoological Gardens</li><li> Mysuru Rail Museum </li><li>Lalitha Mahal Palace </li><li>Many more....</li></b></i>"
+        }
+        var placeImage = {
+            "bangalore": "<img src='https://www.holidify.com/images/cmsuploads/compressed/shutterstock_154851008_20200123162547_20200123162603.png' width='90%' height='90%'></img>",
+            "uttarakannada": "<img src='https://pbs.twimg.com/media/E64h-AFVUAIi7qM.jpg'width='90%' height='50%'></img>",
+            "udupi": "<img src='https://www.seawatersports.com/img/newimage/places/maravanthe-beach.jpg'width='80%' height='80%'></img>",
+            "ballari": "<img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/0b/95/bd/hampi.jpg?w=700&h=-1&s=1'width='90%' height'70%'></img>",
+            "mysuru": "<img src='https://images.thrillophilia.com/image/upload/s--iRSeXncV--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/031/012/original/1554981542_Mysore-shutterstock_122322643-R.jpg.jpg'width='100%' height'80%'></img>"
+        }
+        var placeVideo ={
+            "bangalore": '<iframe width="560" height="315" src="https://www.youtube.com/embed/IBnv7Lurj_c?controls=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            "uttarakannada": '<iframe width="560" height="315" src="https://www.youtube.com/embed/gCFpR_ky5ZI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            "udupi": '<iframe width="560" height="315" src="https://www.youtube.com/embed/XSL1wVH5q8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            "ballari":'<iframe width="560" height="315" src="https://www.youtube.com/embed/qu068GqNWi0?controls=0&amp;start=25&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            "mysuru":'<iframe width="560" height="315" src="https://www.youtube.com/embed/8fIEqyruZIk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        }
+        function showInfo(place) {   
+            document.getElementById("selected-place").innerHTML = "<table><tr><td style='color:white'>" + placeDetails[place.value]+"</td><td>"+placeImage[place.value]+"</td><td>" + placeVideo[place.value]+"</td></tr></table>";             
+        } 
+    </script>
+</head>
+<body background="https://c4.wallpaperflare.com/wallpaper/380/523/681/design-neon-abstract-light-design-hd-wallpaper-preview.jpg" alt="Web design image" width="100%" height="100%"
+style="background-repeat:no-repeat; background-size: 100% 100% ; background-attachment:fixed" text="black">
+    <center><h1 style="color: white ;">Wonders of Karnataka</h1>
+    
+    <h4 style="color: aqua;">ಕನ್ನಡ ಎನೆ ಕುಣಿದಾಡುವುದೆನ್ನೆದೆ| <br>
+        ಕನ್ನಡ ಎನೆ ಕಿವಿ ನಿಮಿರುವುದು|| </h4>
+        <h6 style="text-align: right; color: blanchedalmond;"> - ಕುವೆಂಪು</h6>
+    </center>
+<label for="places" style="color: bisque;">Select a Place</label>
+<select name="places" id="places" onchange="showInfo(this)">
+    <option value="------" disabled selected>------</option>
+    <option value="bangalore">Bengaluru</option>
+    <option value="uttarakannada">Uttarakannada</option>
+    <option value="udupi"> Udupi</option>
+    <option value="ballari"> Ballari</option>
+    <option value="mysuru"> Mysuru</option>
+    <!-- Still Many Places to visit and Explore -->
+</select>
+<div id="place-info">
+    <div>
+        <p id="selected-place"></p>
+    </div>
+</div>
+<div style="align-self: auto; float: right;">
+<h4 style="color: aqua;">- Sadananda</h4></div>
+</body>
+</html>
